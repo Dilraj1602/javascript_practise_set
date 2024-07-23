@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    overflow: hidden;
+    background: #f0f0f0;
+}
+
+.circle1{
+    position: absolute;
+    top: 5%;
+    left: 30%;
+    width: 13em;
+    height: 13em;
+    border-radius: 50%;
+    box-shadow: 0 0 50px #d84869;
+    background: linear-gradient(-25deg, #d84869, #f46641);
+    animation: circle1Animate 15s infinite;
+}
+
+@keyframes circle1Animate{
+    0%{
+        left:30%;
+        scale: 1;
+    }
+    50%{
+        left:35%;
+        scale: 1.05;
+    }100%{
+        left: 30%;
+        scale: 1;
+    }
+    
+}
+.circle2{
+    position: absolute;
+    bottom: 5%;
+    right: 30%;
+    width: 19em;
+    height: 19em;
+    border-radius: 50%;
+    box-shadow: 0 0 50px #5648d8;
+    background: linear-gradient(-25deg, #5648d8, #8641f4);
+    animation: circle2Animate 8s infinite;
+}
+
+@keyframes circle2Animate{
+    0%{
+        right:30%;
+        bottom: 5%;
+    }
+    50%{
+        right:35%;
+        bottom: 7.5%;
+    }100%{
+        right: 30%;
+        bottom: 5%;
+    }
+    
+}
+
+
+.main_body{
+    background-color: black;
+    transition: all 1s;
+}
+.bg_color{
+    transition: all 1s;
+}
+
+.profile_image{
+    border: 2px solid #ffffff30;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.btn_grp:hover .btn_content{
+    color: black;
+}
+
+.btn_content{
+    font-size: small;
+}
+
+.btn_content:hover{
+    color: black;
+    background-color: rgb(203 213 225);
+}
+
+.modal{
+    scale: 0;
+    transition: all 1s;
+}
+
+.modal_open{
+    scale: 1;
+    transition: all 1s;
+    background-color: #00000088;
+}
+
+.exit_section:hover{
+    cursor: pointer;
+}
+
+
+
+.icon a i{
+    font-size: 27px;
+    font-weight: 400;
+    padding: 17px;
+    margin: 10px 0px 25px;
+    border-radius: 50%;
+}
+
+
+
+#facebook i:hover{
+    background-color: #1771e6;
+    scale: 0.9;
+    color: white;
+    transition: all 1s;
+    
+}
+
+#twitter i:hover{
+    background-color: #1c99e6;
+    scale: 0.9;
+    color: white;
+    transition: all 1s;
+    
+}
+
+#insta i:hover{
+    background-color: #cb2770;
+    scale: 0.9;
+    color: white;
+    transition: all 1s;
+    
+}
+
+#whatsapp i:hover{
+    background-color: #2fe664;
+    scale: 0.9;
+    color: white;
+    transition: all 1s;
+}
+
+#telegram i:hover{
+    background-color: #0081c2;
+    scale: 0.9;
+    color: white;
+    transition: all 1s;
+}
+
